@@ -1,0 +1,88 @@
+/* Importer fonter */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400,1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap');
+
+/* Variabler */
+:root {
+    --primary-color: rgb(0, 82, 96);
+    --primary-background-color: rgb(242, 246, 247);
+    --font-color: rgb(0, 0, 0);
+    --font-color-inverted: rgb(255, 255, 255);
+    --link-color: rgb(0, 82, 96);
+    --link-color-hover: rgb(0, 0, 0);
+    --spacing: 1rem;
+    --spacing-small: 0.5rem;
+    --font-size-root: 1rem;
+    --font-size-small: 0.9rem;
+}
+
+/* Kroppsstil */
+body {
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: var(--primary-background-color);
+    color: var(--font-color);
+}
+
+/* Input og textarea */
+input, textarea {
+    font-family: inherit;
+    font-size: var(--font-size-root);
+    width: 100%;
+    padding: var(--spacing-small);
+    margin-top: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+    border: 2px solid var(--primary-color);
+    border-radius: 0.4rem;
+    background-color: var(--primary-background-color);
+}
+
+input:hover, textarea:hover {
+    background-color: var(--primary-color-10);
+}
+
+input:focus-visible, textarea:focus-visible {
+    outline: 4px solid var(--primary-color);
+    outline-offset: -4px;
+}
+
+/* Knappestil */
+button {
+    font-family: inherit;
+    font-size: var(--font-size-root);
+    padding: var(--spacing-small) var(--spacing);
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--font-color-inverted);
+    border: none;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-color-80);
+}
+
+button:disabled {
+    background-color: var(--primary-background-color);
+    color: grey;
+    cursor: not-allowed;
+}
+
+/* Statusmelding */
+#status {
+    margin-top: var(--spacing-small);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Lenker */
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
